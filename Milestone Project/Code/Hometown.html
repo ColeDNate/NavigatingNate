@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hometown</title>
+</head>
+
+<body>
+    <!--This is the top banner including a homepage link-->
+    <nav id="topnav">
+        <a href = "FrontPage.html">Homepage</a> |
+        <a href = "AboutMe.html">About Me</a> |
+        <a href = "ContactInfo.html">Contact info</a>
+    </nav>
+
+    <!--This is the main logo thing-->
+    <!--Utilizing a separate background color for the title-->
+    <div id="headline">
+        <div class="compass-tilt">
+            <a href = "FrontPage.html"> <img src = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\compass.png" alt = "Compass"/></a>
+          </div>
+    </div>
+
+    <!--content-->
+    <div id = "content">
+        
+        <!-- Dropdown Navigation Column-->
+        <div class = "navcolumn">
+            <div id = "itemList" style = "cursor: pointer"><h3>Useful Links</h3></div>
+            <div id="menu">
+                <ul>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Motorcycles.html">Motorcycles</a></li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Music.html">Music</li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Writing.html">Writing</a></li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\History.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <script>
+            //automatically hide the content
+            $("#menu").hide();
+            //on click slide the content into view
+            $("#itemList").click(function(){
+                $("#menu").slideToggle(250);
+            });
+        </script>
+
+        <div class = "contentcolumn">
+            <h2>Hometown</h2>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+
+    <div id = "footer">
+        <a href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\AboutMe.html">Return to About Me</a>
+        <br/>
+        <a href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\FrontPage.html">Return to Homepage</a>
+    </div>
+</body>
+</html>

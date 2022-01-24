@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+
+    <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\formating.css">
+</head>
+
+<body>
+    <!--This is the top banner thing-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style = "background-color: lightslategray">
+    
+        <!-- Links -->
+        <ul class="navbar-nav">
+
+            <li class ="nav-item">
+                <a class="nav-link" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\History.html">Home</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                More Info
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\AboutMe.html">About Me</a>
+                    <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\History.html">History</a>
+                    <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\ContactInfo.html">Contact Info</a>
+                </div>
+            </li>
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Interests & Hobbies
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Motorcycles.html">Motorcycles</a>
+                <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Music.html">Music</a>
+                <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Writing.html">Writing</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!--This is the main logo thing-->
+    <!--Utilizing a separate background color for the title-->
+    <div id="headline">
+        <div class="compass-tilt">
+            <a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\FrontPage.html"> 
+                <img src = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\compass.png" alt = "Compass"/>
+            </a>
+          </div>
+    </div>
+    
+    <div id = "content">
+
+        <!-- Dropdown Navigation Column-->
+        <div class = "navcolumn">
+            <div id = "itemList" style = "cursor: pointer"><h3>Useful Links</h3></div>
+            <div id="menu">
+                <ul>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Motorcycles.html">Motorcycles</a></li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Music.html">Music</li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Writing.html">Writing</a></li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\History.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <script>
+            //automatically hide the content
+            $("#menu").hide();
+            //on click slide the content into view
+            $("#itemList").click(function(){
+                $("#menu").slideToggle(250);
+            });
+        </script>
+  
+        <div class = "contentcolumn">
+          <!--content-->
+            <div id = "Intro">
+                <h2>Personal compositions</h2>
+                <p style = "font-family: sans-serif;">
+                    I am an intermediate level pianist and I have some silly little compositions that I have put together over the past.
+                    I have done some compositions for an escape room I used to work at, they didn't fit in quite right so they were never implemented.
+                    However, the songs exist all the same.
+                    <br/><br/>
+                    Music has been a part of my life for some time. As a child I always wanted to have an instrument, at the time it was drums.
+                    At some point in high school I finally got a piano. My dad got it for free from a friend and gave it to me.
+                    I didn't practice as much as I wish I had. I eventually started playing more as I got into college. 
+                    I took classes to become better and I have been progressing steadily since.
+                    <br/><br/>
+                    Below is a list of several samples of the type of original music I have made. 
+                    My piano is put away right now so these are just some pieces I had laying on my computer.
+                </p>
+            </div>
+
+            <!--This is the music table-->
+            <div id = "table">
+                <table width="75%" border = "1" align = "center">
+                    <tr align = "left">
+                        <th width = "25%"> Music Title</th>
+                        <th width = "25%"> Composition</th>
+                        <th width = "50%"> Description</th>
+                    </tr>
+                    <tr align = "left">
+                        <th>Darker type freestyle</th>
+                        <th style= "background-color: black;"> 
+                            <audio controls>
+                                <source src = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\DarkFreestyle.wav" type = "audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <br/>
+                        </th>
+                        <td>
+                            This is something I recorded on Halloween while I was waiting for trick or treaters. It is a little jankey since I wasn't used to the key I was playing in.
+                        </td>
+                    </tr>
+                    <tr align ="left">
+                        <th align = "left">Dungeon Smash</th>
+                        <th style= "background-color: rgb(97, 61, 13);"> 
+                            <audio controls>
+                                <source src = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Dungeon Smash.wav" type = "audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <br/>
+                        </th>
+                        <td>
+                            This was put together using a piece of software that allows one to compose 8-bit music. 
+                        </td>
+                    </tr>
+                    <tr align ="left">
+                        <th align = "left">Space Theme</th>
+                        <th style= "background-color: rgb(219, 219, 219);"> 
+                            <audio controls loop>
+                                <source src = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\SpaceTheme_V2_NF.wav" type = "audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <br/>
+                        </th>
+                        <td>
+                            This was originally intended to be the theme of the escape room I was working at. I wanted to encapsulate the wistfulness of nothingness.
+                        </td>
+                    </tr>
+                    <tr align ="left">
+                        <th align = "left">Escape the Asteroids</th>
+                        <th style= "background-color: rgb(163, 0, 0);"> 
+                            <audio controls loop>
+                                <source src = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\SpaceRock_v2.wav" type = "audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <br/>
+                        </th>
+                        <td>
+                            This is another piece of the escape room compositions. This was to be used during a section of critical stress.
+                        </td>
+                    </tr>
+                    <tr align ="left">
+                        <th align = "left">Finished with Space</th>
+                        <th style= "background-color: rgb(52, 77, 129);"> 
+                            <audio controls loop>
+                                <source src = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Space Finish v2.wav" type = "audio/wav">
+                                Your browser does not support the audio tag.
+                            </audio>
+                            <br/>
+                        </th>
+                        <td>
+                            This is the last of the escape room compositions. This was to be used upon completion of the room. It is left without a proper ending so that it could loop like the others.
+                        </td>
+                    </tr>
+                </table>
+
+            </div> 
+        </div>
+    </div>
+    
+    <div id = "footer">
+        <a href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\AboutMe.html">Return to About Me</a>
+        <br/>
+        <a href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\FrontPage.html">Return to Homepage</a>
+    </div>
+
+</body>
+</html>

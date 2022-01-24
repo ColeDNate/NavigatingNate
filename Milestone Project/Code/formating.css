@@ -1,0 +1,141 @@
+
+body{
+    background-color:rgb(230, 225, 219);
+}
+h2{
+    font-family:'Times New Roman';
+}
+h3{
+    font-family:'Times New Roman';
+}
+p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid #fff7eb;
+}
+th, td{
+    padding: 10px;
+    vertical-align: top;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#topnav{
+    width:100%;
+    padding-left: 5px;
+    padding-top: 2px;
+    box-sizing: border-box;
+    text-align:left;
+    background-color:lightslategray;
+    height: 26px;
+    color:#fff7eb;
+    vertical-align: middle;
+}
+#topnav a{
+    color:#fff7eb;
+    text-decoration:none;
+}
+#topnav a:hover{
+    text-decoration:underline;
+}
+
+#headline{
+    width:100%;
+    text-align: center;
+    background-color:rgb(150, 150, 150);
+    color:rgb(61, 103, 151);
+}
+
+#poetry{
+    padding-left: 5%;
+    text-align: left;
+}
+#poetry h3:hover{
+    color:#a13028;
+    cursor: pointer;
+}
+#poetry p{
+    font-family: 'Times New Roman';
+}
+
+#footer{
+    width:100%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(150, 150, 150);
+    color:rgb(61, 103, 151);
+}
+#footer a{
+    text-decoration: none;
+    color:rgb(61, 103, 151);
+}
+
+.contentcolumn{
+    padding-left:1.5%;
+    padding-right: 1.5%;
+    float: left;
+    width: 85%;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    background-color: lightslategray;
+}
+
+.contentcolumn a{
+    color:#fff7eb;
+    text-decoration:none;
+}
+
+.contentcolumn a:hover{
+    text-decoration:underline;
+}
+.navcolumn{
+    float: left;
+    width: 15%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    color: #0f0122;
+    background-color: #c7e2eb;
+}
+
+.navcolumn h3{
+    padding-left: 10%;
+}
+
+.navcolumn ul{
+    padding-left:20%;
+    list-style-type: none;
+}
+
+.navcolumn a{
+    color: #a13028;
+    text-decoration:none;
+}
+
+.compass-tilt{
+    animation: tilt 7.5s infinite ease-in-out;
+}
+
+.card{
+    background-color:rgb(219, 212, 204);
+}
+
+@keyframes tilt{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}

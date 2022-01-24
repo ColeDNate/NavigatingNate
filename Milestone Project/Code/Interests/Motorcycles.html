@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorcycle</title>
+
+    <script src = "https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link href = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\formating.css">
+</head>
+
+<body >
+    <!--This is the top banner thing-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style = "background-color: lightslategray">
+    
+        <!-- Links -->
+        <ul class="navbar-nav">
+
+            <li class ="nav-item">
+                <a class="nav-link" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\History.html">Home</a>
+            </li>
+  
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                More Info
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\AboutMe.html">About Me</a>
+                    <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\History.html">History</a>
+                    <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\ContactInfo.html">Contact Info</a>
+                </div>
+            </li>
+        
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Interests & Hobbies
+                </a>
+                <div class="dropdown-menu">
+                <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Motorcycles.html">Motorcycles</a>
+                <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Music.html">Music</a>
+                <a class="dropdown-item" href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Writing.html">Writing</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!--This is the main logo thing-->
+    <!--Utilizing a separate background color for the title-->
+    <div id="headline">
+        <div class="compass-tilt">
+            <a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\FrontPage.html"> 
+                <img src = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\compass.png" alt = "Compass"/>
+            </a>
+          </div>
+    </div>
+
+    <div class = "content">
+        
+        <!-- Dropdown Navigation Column-->
+        <div class = "navcolumn">
+            <div id = "itemList" style = "cursor: pointer"><h3>Useful Links</h3></div>
+            <div id="menu">
+                <ul>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Motorcycles.html">Motorcycles</a></li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Music.html">Music</li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\Interests\Writing.html">Writing</a></li>
+                    <li><a href = "D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\History.html">History</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <script>
+            //automatically hide the content
+            $("#menu").hide();
+            //on click slide the content into view
+            $("#itemList").click(function(){
+                $("#menu").slideToggle(250);
+            });
+        </script>
+
+        <div class = "contentcolumn">
+                <!-- This is a text section-->
+            <div id = "text content">
+                <h2>The Engine is the Heart of the Machine</h2>
+                <p style = "font-family: sans-serif;">
+                    As a motorcyclist in full gear, I am an entirely different person. At least, that is what the general population thinks.
+                    When I walk around town off of my machine when I have my helmet and gear, I am never greeted with warmth. 
+                    It is a vastly different experience compared to when I take my car.
+                    This is important to understand because it is important to ignore.
+                    My identity is not made up of the opinions of others who. The bike is only a fraction of who I am.
+                    <br/><br/>
+                    I ride to hone my skills. I ride to feel life outside of a box. I ride to save money on gas. Seriously, gas is super expensive in California.
+                    When I am not riding, I make sure to take care of my machine.
+                    <br/><br/>
+                    I am a mechanic. I manage my motorcycle and my car. If I fail to take care of my machines they will leave me stranded some place I would rather not be.
+                    The title of the page, the heart of the machine, is not about what I like or what I am interested.
+                    It is about who I am. I endeavor to understand the mechanics of everything around me.
+                    The engine is the metaphor. I understand the engine so that I can understand myself.
+                </p>
+            </div>
+
+            <div id = "image section" style = "font-family: sans-serif;">
+                <!-- todo: image table-->
+                <table width="90%" border = "1" align = "center">
+                    <tr align = "left">
+                        <td width = "33%"> 
+                            <img src="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Motorcycle Images\Bike on mountain.jpg" 
+                            width = "100%"
+                            height = "100%"
+                            alt = "bike on mountain"> 
+                            <br/>
+                            <p>This is one of the first rides I went on after buying my first, and only, motorcycle.</p>
+                        </td>
+                        <td width = "33%"> 
+                            <img src="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Motorcycle Images\Easter Egg on bike.jpg" 
+                            width = "100%"
+                            height = "100%"
+                            alt = "Niece egg hunt"> 
+                            <p>It took a while to be integrated into the family and my niece was thrilled when she saw an egg hidden on the peg.</p>
+                        </td>
+                        <td rowspan = "2" width = "33%"> 
+                            <img src="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Motorcycle Images\Inlaw and niece.jpg" 
+                            width = "100%"
+                            height = "100%"
+                            alt = "Brother in law and niece"> 
+                            <p>My brother in law wanted a motorcycle but he and my sister were concerned because of the little one.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> 
+                            <img src="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Motorcycle Images\sanded damage.jpg" 
+                            width = "100%"
+                            height = "100%"
+                            alt = "Sanded damage"> 
+                            <br/>
+                            <p>At one point someone ran me off the road and I had to repair the damage</p>
+                        </td>
+                        <td> 
+                            <img src="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Motorcycle Images\prepped for paint.jpg" 
+                            width = "100%"
+                            height = "100%"
+                            alt = "Painted motorcycle"> 
+                            <p>Here she is mostly prepped and ready for a new coat. That is only half of the plastic I used.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Motorcycle Images\fresh paint.jpg" 
+                            width = "100%"
+                            height = "100%"
+                            alt = "Prepped motorcycle"> 
+                            <p>A fresh multi-coat paint job leaves her feeling refreshed. It took seven coats to completely cover the damage.</p>
+                        </td>
+                        <td>
+                            <img src="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Media\Motorcycle Images\bike lean.jpg" 
+                            width = "100%"
+                            height = "100%"
+                            alt = "Lean angle"> 
+                            <p>Of course, I do need to go and take her for a test ride to make sure the paint is durable.</p>
+                        </td>
+                    </tr>
+                </table>
+                
+                <hr/>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id = "footer">
+        <a href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\AboutMe.html">Return to About Me</a>
+        <br/>
+        <a href="D:\Documents\GCU\CST-120\worcspaceCST-120\Milestone Project\Code\FrontPage.html">Return to Homepage</a>
+    </div>
+    
+</body>
+</html>
