@@ -1,2 +1,2 @@
-# NavigatingNate.github.io
+# NavigatingNate
 My Personal Website
