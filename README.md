@@ -1,2 +1,1 @@
-# NavigatingNate
-My Personal Website
+
